@@ -20,6 +20,7 @@
   --tim-btn-bg: #f5f4fa;
 }
 
+
 h1,
 h2,
 h3,
@@ -145,6 +146,7 @@ body {
   color: var(--accent-color);
 }
 
+
 /* CТУДИЯ */
 /* Hero */
 
@@ -161,7 +163,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../imeges/hero-img.jpg");
+    url("../images/hero-img.jpg");
 }
 
 .hero-title {
@@ -231,37 +233,20 @@ body {
 }
 
 .features-item {
+
   width: 270px;
 }
 
-.features-item::before {
-  display: block;
-  content: "";
+.features-icons {
+  display: flex;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 
   background-color: var(--tim-btn-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-
 }
 
-.icon-antena::before {
-background-image: url(../imeges/antenna.svg);
-}
 
-.icon-clock::before {
-background-image: url(../imeges/clock.svg);
-}
-
-.icon-diagram::before {
-background-image: url(../imeges/diagram.svg);
-}
-
-.icon-astronaut::before {
-background-image: url(../imeges/astronaut.svg);
-}
 
 .features-item:not(:nth-child(4n)) {
   margin-right: 30px;
