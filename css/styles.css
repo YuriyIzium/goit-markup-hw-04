@@ -20,7 +20,6 @@
   --tim-btn-bg: #f5f4fa;
 }
 
-
 h1,
 h2,
 h3,
@@ -49,9 +48,15 @@ body {
 }
 
 /* BASE */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .link {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 .list {
   list-style: none;
@@ -131,8 +136,15 @@ body {
   gap: 50px;
 }
 
+.header-icons {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-contacts .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 
   font-weight: 500;
@@ -145,7 +157,6 @@ body {
 .header-contacts .link:focus {
   color: var(--accent-color);
 }
-
 
 /* CТУДИЯ */
 /* Hero */
@@ -233,23 +244,22 @@ body {
 }
 
 .features-item {
-
   width: 270px;
 }
 
-.features-icons {
-  display: flex;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-
-  background-color: var(--tim-btn-bg);
-}
-
-
-
 .features-item:not(:nth-child(4n)) {
   margin-right: 30px;
+}
+
+.features-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: var(--tim-btn-bg);
 }
 
 .features-title {
@@ -415,6 +425,11 @@ body {
   color: var(--primary-white);
 }
 
+.address-text:hover,
+.address-text:focus {
+  color: var(--accent-color);
+}
+
 .logo-indent {
   display: inline-block;
   margin-bottom: 20px;
@@ -422,6 +437,11 @@ body {
 
 .lofo-color-footer {
   color: var(--primary-white);
+}
+
+.footer-items {
+  display: flex;
+  gap: 70px;
 }
 
 .footer-contacts {
@@ -439,4 +459,39 @@ body {
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
   color: var(--accent-color);
+}
+
+.social-links {
+  padding-top: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white);
+}
+
+.footer-icon-wrapper:hover,
+.footer-icon-wrapper:focus {
+  background: var(--accent-color);
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white);
 }
