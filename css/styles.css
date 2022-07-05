@@ -49,11 +49,7 @@ body {
 }
 
 /* BASE */
-a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -495,8 +491,8 @@ a {
   color: var(--primary-white);
 }
 
-.address-text:hover,
-.address-text:focus {
+.address-text .link:hover,
+.address-text .link:focus {
   color: var(--accent-color);
 }
 
